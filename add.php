@@ -12,7 +12,7 @@
         $extension = pathinfo($filename, PATHINFO_EXTENSION);
         $new_name = date('YmdHis');
         $tempname = $_FILES['image']['tmp_name'];
-        $folder = "./images/".$name.".".$extension;
+        $folder = "./images/".$new_name.".".$extension;
 
         // melakukan upload gambar ke folder image
         // jika ada gambar yang diunggah maka kita akan memasukkan seluruh data
