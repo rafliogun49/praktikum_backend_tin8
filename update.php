@@ -25,7 +25,7 @@
         $extension = pathinfo($filename, PATHINFO_EXTENSION);
         $new_name = date('YmdHis');
         $tempname = $_FILES['image']['tmp_name'];
-        $folder = "./images/".$name.".".$extension;
+        $folder = "./images/".$new_name.".".$extension;
         
         // mengupload gambar. jika ada gambar maka akan mengupdate data gambar, jika tidak maka kita tidak akan mengupdate data gambar
         if(move_uploaded_file($tempname, $folder)){
