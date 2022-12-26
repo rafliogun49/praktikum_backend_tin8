@@ -15,7 +15,6 @@
         $new_name = date('YmdHis');
         $tempname = $_FILES['Gambar']['tmp_name']; 
         $folder = "./img/".$new_name.".".$extension;
-        echo $Nama_Tempat . $Rating . $Alamat . $Tahun_Dibangun . $Penjelasan . $folder;
         // melakukan upload gambar ke folder image
         // jika ada gambar yang diunggah maka kita akan memasukkan seluruh data
         // jika tidak ada gambar maka kita akan memasukkan seluruh data kecuali kolom image
